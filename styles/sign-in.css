@@ -32,6 +32,12 @@
 .form-header form input:focus,.form-header form input:hover{
     border: 1.1px solid var(--special-blue-color);
 }
+.form-header form input:focus::placeholder{
+  color: transparent;
+}
+.custom-placeholder-container:focus-within .custom-placeholder{
+    display: block;
+}
 .form-header form button{
     border: none;
     background: var(--special-blue-color);
@@ -74,8 +80,10 @@
 
 .custom-placeholder-container {
     position: relative;
+  
 }
 .custom-placeholder {
+    display: none;
     position: absolute;
     font-size: 0.7rem;
     background-color: #fff;
