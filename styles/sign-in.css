@@ -25,12 +25,12 @@
     transition: linear 0.5s ease-in-out;
 }
 .form-header form input{
-    border: 0.5px solid var(--input-border-color);
+    border: 1.1px solid var(--input-border-color);
     font-size: medium;
     outline: none;
 }
 .form-header form input:focus,.form-header form input:hover{
-    border: 0.5px solid var(--special-blue-color);
+    border: 1.1px solid var(--special-blue-color);
 }
 .form-header form button{
     border: none;
@@ -72,6 +72,18 @@
     text-decoration: none;
 }
 
+.custom-placeholder-container {
+    position: relative;
+}
+.custom-placeholder {
+    position: absolute;
+    font-size: 0.7rem;
+    background-color: #fff;
+    padding: 0 5px;
+    top: -6px;
+    left: 15px;
+    color: var(--little-text);
+}
 
 @media (min-width:1281px)  { 
 
