@@ -93,6 +93,10 @@
     color: var(--little-text);
 }
 
+.policy-footer {
+    color: var(--left-side-text);
+}
+
 @media (min-width:1281px)  { 
 
 .forms-page {
