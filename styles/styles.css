@@ -1,0 +1,20 @@
+
+@import url("sign-in.css");
+@import url("forgot-password.css");
+
+
+html, body, * {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root {
+    --special-blue-color: #0383EF;
+    --little-text: #A7ABBA;
+    --left-side-text: #737A91;
+    --left-side-bg: #F3F8FF;
+    --special-green-color: #00D569;
+    --input-border-color: #DFE2E6;
+
+}
+

@@ -1,0 +1,127 @@
+
+.forms-page {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+.left-side {
+  display: none;
+}
+/* Right side style */
+
+.form-container { 
+    height: 95vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-header form input, button {
+    display: block;
+    width: 100%;
+    padding: 15px 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: linear 0.5s ease-in-out;
+}
+.form-header form input{
+    border: 0.5px solid var(--input-border-color);
+    font-size: medium;
+    outline: none;
+}
+.form-header form input:focus,.form-header form input:hover{
+    border: 0.5px solid var(--special-blue-color);
+}
+.form-header form button{
+    border: none;
+    background: var(--special-blue-color);
+    color: #fff;
+    font-size: 20px;
+}
+.form-header h2{
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.form-header .sign-in-text{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--little-text);
+    line-height: 30px;
+}
+.form-header h2 .troperial-text{
+    color: var(--special-green-color);
+}
+
+.sendToNewPage {
+    color: black;
+    font-weight: 400;
+    margin: 15px 0;
+}
+.sendToNewPage a {
+    color: var(--special-blue-color);
+    text-decoration: none;
+} 
+
+.form-footer {
+    text-align: center;
+}
+.form-footer p a{
+    color: var(--special-blue-color);
+    text-decoration: none;
+}
+
+
+@media (min-width:1281px)  { 
+
+.forms-page {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+    /* Left side style */
+.left-side {
+    display: block;
+    position: relative;
+    background-color: var(--left-side-bg);
+}
+.left-side-bottom {
+    position: absolute;
+    left:0;
+    bottom: 0;
+}
+.left-side-bottom img{
+   width:90%;
+}
+.left-side-top {
+    width: 65%;
+    margin: 150px auto 0 auto;
+}
+.left-side-top .troperial-logo {
+    margin-bottom: 30px;
+}
+.left-side-top h3 {
+    font-weight: 900;
+    font-size: 23px;
+    color: var(--left-side-text);
+    line-height: 35px;
+}
+.left-side-top h3 img {
+    margin-bottom: -10px;
+}
+.form-header form input, button {
+    width: 120%;
+}
+
+.form-header h2{
+    text-align: left;
+}
+.form-header .sign-in-text{
+    text-align: left;
+}
+.form-footer {
+    text-align: center;
+}
+
+}
+
